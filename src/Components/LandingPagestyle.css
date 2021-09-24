@@ -1,0 +1,205 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: Heebo, sans-serif;
+}
+.upper-container {
+  padding-top: 100px;
+  min-height: 802px;
+  overflow: hidden;
+  position: relative;
+  background-image: -webkit-linear-gradient(
+    139deg,
+    rgb(100, 43, 115) 0%,
+    rgb(198, 66, 110) 100%
+  );
+}
+
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 30px;
+    padding-right: 30px; */
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  min-height: calc(702px);
+}
+
+.text-container {
+  width: 70%;
+  flex-shrink: 0;
+}
+
+.for-animations{
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-reveal-779202181001881-2;
+}
+
+.animation-0{
+    animation-delay: 0ms;
+}
+
+.animation-100{
+    animation-delay: 100ms;
+}
+.animation-200{
+    animation-delay: 200ms;
+}
+.animation-300{
+    animation-delay: 300ms;
+}
+.rating-cointainer{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 22px;
+    color: rgb(255, 255, 255);
+}
+
+.rating-cointainer .rating {
+    margin-right: 10px;
+}
+
+
+.text-container h1 {
+    font-size: 46px;
+    line-height: 55px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-bottom: 24px;
+}
+.text-container p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    line-height: 29px;
+}
+.heading-container {
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.desc-text{
+    margin-top: 0px;
+    margin-bottom: 1rem;
+}
+
+.button-container{
+    margin-top: 35px;
+}
+
+.button-container .reusecore__button.primary {
+    background-color: rgb(255, 255, 255);
+    color: rgb(15, 33, 55);
+    font-size: 16px;
+    letter-spacing: -0.1px;
+}
+
+.button-container .reusecore__button.text {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    letter-spacing: -0.1px;
+    font-weight: 500;
+}
+
+.button-container .reusecore__button {
+    text-transform: inherit;
+    border-radius: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.reusecore__button {
+    font-weight: 500;
+}
+
+.buy-btn {
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(209, 57, 124);
+    min-height: 48px;
+    min-width: 48px;
+    border-radius: 0px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border: 0px;
+    transition: all 0.3s ease 0s;
+}
+.buy-btn span.btn-text {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cart-btn{
+        cursor: pointer;
+        display: inline-flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        min-height: 48px;
+        min-width: 48px;
+        border-radius: 0px;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all 0.3s ease 0s;
+        border: 0px;
+        color: rgb(209, 57, 124);
+        padding: 0px;
+        height: auto;
+        background-color: transparent;
+}
+
+.cart-btn span.btn-icon {
+    display: flex;
+}
+
+.img-container{
+    flex-shrink: 0;
+    /* width: 1000px; */
+}
+
+.img-container img {
+    margin-left: -40px;
+    margin-top: 50px;
+}
+.main-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+}
+
+@media (min-width: 1220px) {
+  .main-container {
+    max-width: 1170px;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .main-container {
+    max-width: 970px;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .main-container {
+    max-width: 750px;
+    width: 100%;
+  }
+}

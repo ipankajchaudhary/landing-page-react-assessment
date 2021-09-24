@@ -1,0 +1,130 @@
+html, html a, h1, h2, h3, h4, h5, h6, a, p, li, dl, th, dt, input, textarea, span, div {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgb(0 0 0 / 0%) 1px 1px 1px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navbar style */
+
+@media only screen and (max-device-width: 1161px) {
+  .display-none-flex {
+    display: none;
+  }
+  .navbar-toggler {
+    position: relative;
+    left: 0%;
+  }
+}
+@media only screen and (min-device-width: 1161px) {
+  .display-none-flex {
+    display: flex;
+  }
+}
+.container-fluid {
+  z-index: 5;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+  /* padding-left: 30px; */
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #4649ff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.btn-login {
+  border: none;
+  margin-right: 10px;
+  background-color: #ffffff;
+}
+.btn-login:hover {
+  /* border: 2px solid rgb(184, 181, 181); */
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: #3861fb;
+  /* margin-right: 10px; */
+  border-radius: 10px;
+  color: #ffffff;
+  /* padding-left: 20px; */
+}
+.btn:hover {
+  background-color: #1443f0;
+  color: #ffffff;
+}
+
+.btn-outline-secondary {
+  border: none !important;
+
+  outline: none !important;
+  box-shadow: none !important;
+}
+.btn-outline-secondary:hover {
+  border: none;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-outline-secondary::-moz-focus-inner {
+  border: 0;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+
+
