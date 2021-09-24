@@ -1,4 +1,21 @@
-html, html a, h1, h2, h3, h4, h5, h6, a, p, li, dl, th, dt, input, textarea, span, div {
+html,
+html a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+li,
+dl,
+th,
+dt,
+input,
+textarea,
+span,
+div {
   -webkit-font-smoothing: antialiased;
   text-shadow: rgb(0 0 0 / 0%) 1px 1px 1px;
 }
@@ -44,6 +61,34 @@ html, html a, h1, h2, h3, h4, h5, h6, a, p, li, dl, th, dt, input, textarea, spa
 
 /* Navbar style */
 
+.header {
+  /* background-color: rgb(198, 66, 110); */
+  background-image: -webkit-linear-gradient(
+    264deg,
+    rgb(100, 43, 115) 0%,
+    rgb(198, 66, 110) 100%
+  );
+  /* border-bottom: 1px solid white; */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.navbar-light .navbar-brand {
+  color: white
+}
+
+.nav-item{
+padding-right: 100px;
+}
+
+.nav-item a{
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-light .navbar-text a, .navbar-light .navbar-text a:focus, .navbar-light .navbar-text a:hover {
+  color: white;
+}
+
 @media only screen and (max-device-width: 1161px) {
   .display-none-flex {
     display: none;
@@ -64,7 +109,7 @@ html, html a, h1, h2, h3, h4, h5, h6, a, p, li, dl, th, dt, input, textarea, spa
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #0087ca;
+  color: white;
   /* padding-left: 30px; */
 }
 
@@ -76,7 +121,7 @@ html, html a, h1, h2, h3, h4, h5, h6, a, p, li, dl, th, dt, input, textarea, spa
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #4649ff;
+  background-color: white;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -86,45 +131,7 @@ html, html a, h1, h2, h3, h4, h5, h6, a, p, li, dl, th, dt, input, textarea, spa
   transform-origin: bottom left;
 }
 
-.btn-login {
-  border: none;
-  margin-right: 10px;
-  background-color: #ffffff;
-}
-.btn-login:hover {
-  /* border: 2px solid rgb(184, 181, 181); */
-  border-radius: 10px;
-}
 
-.btn {
-  background-color: #3861fb;
-  /* margin-right: 10px; */
-  border-radius: 10px;
-  color: #ffffff;
-  /* padding-left: 20px; */
+.collapse{
+  justify-content: space-around;
 }
-.btn:hover {
-  background-color: #1443f0;
-  color: #ffffff;
-}
-
-.btn-outline-secondary {
-  border: none !important;
-
-  outline: none !important;
-  box-shadow: none !important;
-}
-.btn-outline-secondary:hover {
-  border: none;
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-.btn-outline-secondary::-moz-focus-inner {
-  border: 0;
-  box-shadow: none !important;
-  outline: 0 !important;
-}
-
-
-
